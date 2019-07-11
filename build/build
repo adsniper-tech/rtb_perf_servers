@@ -1,0 +1,14 @@
+#!/bin/bash
+
+build()
+{
+    local TYPE=$1
+    local DIR=$2
+
+    cmake -DCMAKE_BUILD_TYPE=${TYPE} -S ../ -B ./${DIR}
+    make --jobs=`nproc` -C ./${DIR}
+#    make VERBOSE=1 -C ./${DIR}
+}
+
+
+build "RelWithDebInfo" "reldeb"

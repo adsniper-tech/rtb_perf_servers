@@ -1,0 +1,11 @@
+.idea
+cmake-build-debug
+cmake-build-release
+build
+build/
+build/14.04
+build/18.04
+build/19.04
+build/release
+build/debug
+build/reldeb
